@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_title_bar" />
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="-4dp"
+            android:paddingLeft="1dip" >
+
+            <com.dist.iportal.view.MyTabWidget
+                android:id="@+id/top_indicator"
+                android:layout_width="fill_parent" 
+                android:background="@color/white"
+                android:layout_height="fill_parent" /> 
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:paddingLeft="2dip" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </FrameLayout> 
+    </LinearLayout>
+    -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" />
+
+    <com.dist.iprocess.view.BaseTabWidget
+        android:id="@+id/top_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <LinearLayout
+         android:id="@+id/tab2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/base_tab_bottom_bg"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:button="@null"
+                android:drawableTop="@drawable/base2_tab1"
+                android:gravity="center|bottom"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="测试"
+                android:textColor="@drawable/base2_tab_textcolor"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:button="@null"
+                android:drawableTop="@drawable/base2_tab0"
+                android:gravity="center|bottom"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="测试"
+                android:textColor="@drawable/base2_tab_textcolor"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:button="@null"
+                android:drawableTop="@drawable/base2_tab1"
+                android:gravity="center|bottom"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="测试"
+                android:textColor="@drawable/base2_tab_textcolor"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:button="@null"
+                android:drawableTop="@drawable/base2_tab2"
+                android:gravity="center|bottom"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="测试"
+                android:textColor="@drawable/base2_tab_textcolor"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:button="@null"
+                android:drawableTop="@drawable/base2_tab3"
+                android:gravity="center|bottom"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="测试"
+                android:textColor="@drawable/base2_tab_textcolor"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

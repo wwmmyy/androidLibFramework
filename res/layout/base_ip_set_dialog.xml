@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/open_gallery_selector"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="原IP地址:"
+                android:textSize="18dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/ipset_oldip"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.7"
+                android:textSize="15dp"
+                android:background="@drawable/base_bg_set"
+                android:gravity="center_vertical" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/open_camera_selector"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="新IP地址:"
+                android:textSize="18dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/ipset_newip"
+                android:layout_width="wrap_content"
+                  android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="15dp"
+                android:textSize="15dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/base_bg_set" >
+            </EditText>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/open_cancel_selector"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:layout_marginBottom="180dip"
+        android:paddingTop="5dip" >
+          <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"/>
+        <Button
+            android:id="@+id/ipset_setting_cancel"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:background="@drawable/base_login_textboard"
+            android:text="取消"
+                   android:textColor="@color/item_color"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+           <Button
+            android:id="@+id/ipset_setting_sure"
+            android:layout_marginLeft="30dp"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:background="@drawable/base_login_textboard"
+            android:layout_gravity="center_vertical"
+            android:text="确定"
+            android:textColor="@color/item_color"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+           
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"/>
+    </LinearLayout>
+
+</LinearLayout>
